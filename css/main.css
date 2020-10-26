@@ -1,0 +1,50 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	color: #212121;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background: linear-gradient(135deg, #F0C3FC, #C9CEFC, #B2FCDB);
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #F5F5F5;
+	opacity: .3;
+	backdrop-filter: saturate(150%) blur(20px);
+	-webkit-backdrop-filter: saturate(150%) blur(10px);
+	z-index: 1;
+}
+
+.main .text {
+	z-index: 2;
+}
+
+.main .text h1 {
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 80pt;
+}
+
+.main .text .by {
+	position: absolute;
+	bottom: 16pt;
+	left: 16pt;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 11pt;
+	letter-spacing: 1pt;
+}
